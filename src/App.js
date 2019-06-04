@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MotoListItem from './components/components/MotoListItem'
+import MotoListItem from './components/MotoListItem'
 import motocycles from './staticDataSources/motostore/defaults';
 
 function MotoList() {
