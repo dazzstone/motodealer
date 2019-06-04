@@ -34,6 +34,13 @@ const motocycles = [
     price: 12000,
     imageUrl: "https://cdp.azureedge.net/products/USA/HO/2019/MC/SUPERSPORT/CBR1000RR_SP/50/GRAND_PRIX_TRI-COLOR/2000000001.jpg",
   },
+  {
+    slug: "xr150l",
+    title: "Honda XR 150 L",
+    description: "XR150 – новий представник легендарної лінійки позашляхових мотоциклів Honda.",
+    price: 2500,
+    imageUrl: "https://www.hondashop.com.au/wp-content/uploads/2018/01/Honda-XR150L.jpg",
+  },
 ];
 
 export default motocycles;
