@@ -1,0 +1,60 @@
+.header {
+  text-align: center;
+  font-size: 20pt;
+}
+
+.motos-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.moto-list-item{
+  margin: 20px;
+  max-width: 100%;
+  width: 30%;
+  max-height: 100%;
+  height: 30%;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  text-align: right;
+}
+
+.image{
+  width: 300px;
+  margin-right: 10%;
+  margin-top: 10pt;
+  }
+
+.title{
+  font-size: 12pt;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.description {
+  text-align: left;
+  max-width: 200px;
+  max-height: 200px;
+  font-size: 10pt;
+  float: right;
+  margin-bottom: 35pt;
+}
+.moto-list-item:hover{
+  transition-duration: .5s;
+ -webkit-box-shadow: 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904), 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904); 
+ -moz-box-shadow: 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904), 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904); 
+ box-shadow: 0 0 15px rgba(209, 207, 207, 0.5);; 
+}
+.fixedImg{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+}
+.fixblock{
+  position: sticky;
+  background: grey;
+  width: 100pt;
+  height: 40pt;
+  padding: 15px 10px;
+}

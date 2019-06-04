@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MotoListItem from './components/components/MotoListItem'
+import motocycles from './staticDataSources/motostore/defaults';
 
-function App() {
+function MotoList() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <div className="fixblock">
+        <img src="https://images.ua.prom.st/111794951_w640_h640_mopedy-honda.jpg" className="fixedImg"></img>
     </div>
+    <div className="motos-container">
+      {motocycles.map((moto, index) => (
+        <MotoListItem 
+          key={index}
+          title={moto.title}
+          image={moto.imageUrl}
+          desc={moto.description}
+          price={moto.price}
+        />
+      ))}
+    </div>
+    </>
   );
 }
 
-export default App;
+export default MotoList;
