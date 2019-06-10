@@ -1,15 +1,16 @@
 import './index.css';
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function MotoListItem({ title, image, desc, key, fixedImg, price}) {
+function MotoListItem({ title, image, key, price, slug}) {
   return (
-    <div key={key} className="moto-list-item">
-      <img src={image} className="image"></img>
+      <Link src={key} to={slug} className="moto-list-item">
+      <img src={image} className="img"></img>
       <p class="title">{title}</p>
-      <div src={price} className="price">
+      <p src={price} className="price">
         ${price}
-      </div>
-    </div>
+      </p>
+    </Link>
   )
 }
 export default MotoListItem;
