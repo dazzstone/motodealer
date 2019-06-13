@@ -1,12 +1,12 @@
 import React from 'react';
-import MotoListItem from '../MotoListItem'
-import motocycles from '.../../../src/staticDataSources/motostore/defaults';
+import { connect } from 'react-redux'
+import MotoListItem from '../MotoListItem/motolistitem'
 
 
-function Home() {
+function Home({ motos }) {
   return (
     <div className="motos-container">
-      {motocycles.map((moto, index) => (
+      {motos.map((moto, index) => (
         <MotoListItem
           key={index}
           title={moto.title}
@@ -19,4 +19,9 @@ function Home() {
     </div>
   )
 }
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    motos: state.items
+  }
+}
+export default connect(mapStateToProps, null)(Home)
