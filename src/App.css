@@ -8,3 +8,9 @@
 .fixedImg{
   z-index: 999999;
 }
+.crumbs{
+  position: relative;
+  margin-left: 50px;
+  text-decoration: none;
+  content: "/";
+}
