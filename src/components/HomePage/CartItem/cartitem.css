@@ -1,0 +1,12 @@
+.counter{
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: crimson;
+  color: black;
+  margin-top: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  text-align: center;
+}

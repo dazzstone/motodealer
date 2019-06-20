@@ -1,10 +1,10 @@
-import './index.css';
+import './motolistitem.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function MotoListItem({ title, image, key, price, slug}) {
   return (
-      <Link src={key} to={slug} className="moto-list-item">
+      <Link src={key} to={`moto/${slug}`} className="moto-list-item">
       <img src={image} className="img"></img>
       <p class="title">{title}</p>
       <p src={price} className="price">

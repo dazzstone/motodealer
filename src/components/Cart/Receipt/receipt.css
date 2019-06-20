@@ -1,0 +1,23 @@
+.receipt{
+  margin-top:100px;
+  margin-left: 470px;
+  width: 310px;
+}
+.subm{
+  width: 310px;
+  height: 30px;
+  background-color: crimson;
+}
+.subm:hover{
+  background: #c90000;
+  text-decoration: none;
+}
+.fio{
+  width: 310px;
+}
+::-webkit-input-placeholder {
+text-align:center;
+}
+.fio[type=text]:focus {
+  background-color: lightblue;
+}
