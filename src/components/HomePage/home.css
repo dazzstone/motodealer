@@ -1,3 +1,31 @@
-.image{
-  width: 80%;
+.iconimg{
+  width: 40%;
+  margin-left: 120px;
+}
+.motocategory{
+  margin: auto;
+  width: 426.5px;
+  margin-top: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.categorytitle{
+  color: black;
+  font-size: 20pt;
+  text-align: center;
+  display: block;
+  font-size: 12pt;
+}
+.motos-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.motocategory:hover{
+    transition-duration: .5s;
+ -webkit-box-shadow: 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904), 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904); 
+ -moz-box-shadow: 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904), 0 0.5px 0.5px 0.5px rgba(252, 248, 248, 0.904); 
+ box-shadow: 0 0 15px rgba(209, 207, 207, 0.5);; 
 }

@@ -1,8 +1,25 @@
 import { ADD_TO_CART, REMOVE_ITEM, SUB_QUANTITY, ADD_QUANTITY, ADD_SHIPPING } from '../Actions/action-types/cart-actions';
 
 const initState= {
+  categories: [
+    {
+      categoryId: 1,
+      categoryName: "lowcubature",
+    },
+    {
+      categoryId: 2,
+      categoryName: "classic",
+    },
+    {
+      categoryId: 3,
+      categoryName: "sport",
+    }
+  ],
+
   items:[
     {
+      categoryId: 1,
+      categoryName: "lowcubature",
       id: 1,
       slug: "cb125e",
       title: "Honda CB 125 E",
@@ -11,6 +28,8 @@ const initState= {
       imageUrl: "https://d4zzp4ohshzeb.cloudfront.net/resize/listing-picture/62e14e95-938f-332a-9835-28e58fd34f51?width=1200&height=630",
     },
     {
+      categoryId: 2,
+      categoryName: "classic",
       id: 2,
       slug: "goldwing",
       title: "Honda Gold Wing GL-1800",
@@ -19,6 +38,8 @@ const initState= {
       imageUrl: "https://auto.mail.ru/image/45573-1a274bedd8426d1e97bd037eba2e076b/1200x630/fpng/",
     },
     {
+      categoryId: 2,
+      categoryName: "classic",
       id: 3,
       slug: "cb1100ex",
       title: "Honda CB 1100 EX",
@@ -27,6 +48,8 @@ const initState= {
       imageUrl: "http://www.sagmart.com/uploads/2019/04/19/news_image1/honda-rebel-500-cruiser.jpg",
     },
     {
+      categoryId: 3,
+      categoryName: "sport",
       id: 4,
       slug: "nc750x",
       title: "Honda NC 750 X",
@@ -35,6 +58,8 @@ const initState= {
       imageUrl: "https://www.city-rent.it/wp-content/uploads/2018/01/nc-fronte-1200x630.jpg",
     },
     {
+      categoryId: 3,
+      categoryName: "sport",
       id: 5,
       slug: "cbr1000rr",
       title: "Honda CBR 1000 RR",
@@ -43,6 +68,8 @@ const initState= {
       imageUrl: "https://d4zzp4ohshzeb.cloudfront.net/resize/listing-picture/1ff00bb7-aaa5-3288-b312-d12d8104ebe5?width=1200&height=630",
     },
     {
+      categoryId: 1,
+      categoryName: "lowcubature",
       id: 6,
       slug: "xr150l",
       title: "Honda XR 150 L",

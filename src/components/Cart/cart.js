@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { removeItem, addQuantity, subtractQuantity } from '../Store/Actions/actions';
 import './cart.css';
-import Recipe from './Receipt/receipt';
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 class Cart extends Component {
 
@@ -19,11 +19,13 @@ class Cart extends Component {
     this.props.subtractQuantity(id);
   }
   render() {
+    
 
     let addedMotos = this.props.motos.length ?
       (
         this.props.motos.map(moto => {
           return (
+            <>
                 <tr key={moto.id}>
                   <td className="colm"><img src={moto.imageUrl} alt={moto.imageUrl} className="motoimg" /></td>
                   <td className="colm">{moto.title}</td>
@@ -36,6 +38,7 @@ class Cart extends Component {
                   <td className="colm">{moto.price * moto.quantity}$</td>
                   <td className="colm"><img src="https://www.searchpng.com/wp-content/uploads/2019/03/Hold-butt-715x715.png" className="remove" onClick={() => { this.handleRemove(moto.id) }}></img></td>
                 </tr>
+                </>
           )
         })
       ) :
@@ -44,6 +47,12 @@ class Cart extends Component {
       )
     return (
       <>
+        <div className="crumbs">
+          <Breadcrumb>
+            <BreadcrumbItem tag="a"><Link to="/">Honda MotorCycles</Link> > </BreadcrumbItem>
+            <BreadcrumbItem tag="a" active>Cart</BreadcrumbItem>
+          </Breadcrumb>
+        </div>
         <h5 className="order">Your order</h5>
         <table className="mototitle">
         <th className="colm">Image</th>

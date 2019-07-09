@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './receipt.css'
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class Receipt extends Component {
 
@@ -37,6 +39,12 @@ class Receipt extends Component {
   render() {
     return (
       <>
+      <div className="crumbs">
+        <Breadcrumb>
+            <BreadcrumbItem tag="a"><Link to="/">Honda MotorCycles</Link> > </BreadcrumbItem>
+          <BreadcrumbItem tag="a" active>Receipt</BreadcrumbItem>
+        </Breadcrumb>
+      </div>
         <div className="receipt">
           <div className="treceipt"><center>RECEIPT</center></div>
           <br />
