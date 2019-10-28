@@ -13,7 +13,7 @@ class Categories extends React.Component {
   const { motos, categories } = this.props;
 
   const category = categories.filter(function (c) {
-    return c.categoryName == categoryName
+    return c.categoryName === categoryName
   })[0];
 
     const filteredMotos = motos.filter(function (el) {

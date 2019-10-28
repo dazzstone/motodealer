@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux'
 import { AddToCart } from '../Store/Actions/actions'
 import './motos.css';
@@ -16,7 +16,7 @@ class Moto extends React.Component {
       const { slug } = this.props.match.params;
 
       const motos = this.props.motos.filter(function (el) {
-        return el.slug == slug
+        return el.slug === slug
       });
 
       const cart = motos[0];
@@ -33,7 +33,7 @@ class Moto extends React.Component {
         <span>
           <p className="title">{cart.title}</p>
           <div className="desc">{cart.description}</div>
-          <img className="image" src={cart.imageUrl}></img>
+          <img className="image" src={cart.imageUrl} alt="error"></img>
           <p className="price">Ціна: ${cart.price}</p>
           <button className="button" onClick={() => { this.handleClick(cart.id) }}>Придбати!</button>
         </span>

@@ -32,6 +32,7 @@ class Receipt extends Component {
     var year = new Date().getFullYear();
     that.setState({
       date:
+        // eslint-disable-next-line no-useless-concat
         date + '.' + '0' + month + '.' + year,
     });
   }

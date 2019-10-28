@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import './cartitem.css';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 class CartItem extends Component {
 

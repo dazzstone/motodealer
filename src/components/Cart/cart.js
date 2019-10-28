@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { removeItem, addQuantity, subtractQuantity } from '../Store/Actions/actions';
 import './cart.css';
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
@@ -30,13 +30,13 @@ class Cart extends Component {
                   <td className="colm"><img src={moto.imageUrl} alt={moto.imageUrl} className="motoimg" /></td>
                   <td className="colm">{moto.title}</td>
                   <td className="colm">
-                  <Link to="/cart"><img src="http://www.pngmart.com/files/8/Minus-Transparent-Background.png" className="arrow" onClick={() => { this.handleSubtractQuantity(moto.id) }}></img></Link>
+                  <Link to="/cart"><img src="http://www.pngmart.com/files/8/Minus-Transparent-Background.png" className="arrow" onClick={() => { this.handleSubtractQuantity(moto.id) }} alt="error"></img></Link>
                   <b className="quant">{moto.quantity}</b>
-                  <Link to="/cart"><img src="https://img.icons8.com/metro/420/plus.png" className="arrow" onClick={() => { this.handleAddQuantity(moto.id) }}></img></Link>
+                  <Link to="/cart"><img src="https://img.icons8.com/metro/420/plus.png" className="arrow" onClick={() => { this.handleAddQuantity(moto.id) }} alt="error"></img></Link>
                   </td>
                   <td className="colm">{moto.price}$</td>
                   <td className="colm">{moto.price * moto.quantity}$</td>
-                  <td className="colm"><img src="https://www.searchpng.com/wp-content/uploads/2019/03/Hold-butt-715x715.png" className="remove" onClick={() => { this.handleRemove(moto.id) }}></img></td>
+                <td className="colm"><img src="https://www.searchpng.com/wp-content/uploads/2019/03/Hold-butt-715x715.png" className="remove" onClick={() => { this.handleRemove(moto.id) }} alt="error"></img></td>
                 </tr>
                 </>
           )

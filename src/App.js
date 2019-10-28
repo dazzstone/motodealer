@@ -7,7 +7,6 @@ import Cart from './components/Cart/cart';
 import CartItem from './components/HomePage/CartItem/cartitem';
 import Receipt from './components/Cart/Receipt/receipt';
 import Categories from './components/Categories/categories';
-import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 function App() {
   return (
@@ -15,10 +14,10 @@ function App() {
     <Router>
         <div className="fixblock">
           <Link to="/">
-            <img src="https://images.ua.prom.st/111794951_w640_h640_mopedy-honda.jpg" className="fixedImg"></img>
+            <img src="https://images.ua.prom.st/111794951_w640_h640_mopedy-honda.jpg" className="fixedImg" alt="error"></img>
           </Link>
           <Link to="/cart">
-            <img src="https://image.flaticon.com/icons/png/512/4/4295.png" className="cartimg"></img>
+            <img src="https://image.flaticon.com/icons/png/512/4/4295.png" className="cartimg" alt="error"></img>
               <CartItem />
           </Link>
         </div>
